@@ -25,10 +25,14 @@
     :href="href"
     :target="href ? '_blank' : undefined"
     :rel="href ? 'noopener noreferrer' : undefined"
-    class="px-4 w-96 flex gap-3 items-center"
-    :class="href ? 'transition-colors hover:bg-accent rounded-md' : ''"
+    class="px-4 w-96 flex gap-3 items-center py-2"
+    :class="
+      href
+        ? 'transition-colors hover:bg-foreground/8 focus-visible:bg-foreground/12 active:bg-foreground/12'
+        : ''
+    "
   >
-    <component :is="icon" class="text-2xl shrink-0" />
+    <component :is="icon" class="text-2xl shrink-0 text-primary" />
     <div class="flex flex-col">
       <div class="text-xl font-bold">{{ title }}</div>
       <div class="text-sm text-muted-foreground">{{ description }}</div>
