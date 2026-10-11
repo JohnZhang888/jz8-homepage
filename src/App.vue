@@ -19,13 +19,13 @@ import logoDark from '@/assets/logos/logo-dark.svg';
       </div>
       <div class="flex flex-col px-4">
         <div class="text-muted-foreground font-bold my-1">友情链接</div>
-        <a href="https://commongoldingot.github.io" target="_blank" rel="noopener noreferrer"
-          class="text-primary w-fit transition-opacity hover:opacity-70 active:opacity-50 focus-visible:opacity-50">
-          CommonGoldIngot
-        </a>
         <a href="https://cnblogs.com/aeee5x" target="_blank" rel="noopener noreferrer"
           class="text-primary w-fit transition-opacity hover:opacity-70 active:opacity-50 focus-visible:opacity-50">
           AeeE5x（博客园）
+        </a>
+        <a href="https://commongoldingot.github.io" target="_blank" rel="noopener noreferrer"
+          class="text-primary w-fit transition-opacity hover:opacity-70 active:opacity-50 focus-visible:opacity-50">
+          CommonGoldIngot
         </a>
       </div>
 
