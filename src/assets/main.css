@@ -26,6 +26,18 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * 只在具备精确指针（鼠标/触控板）且支持悬停的设备上应用 hover，避免触屏上点击后残留 hover。
+ * 收紧自 Tailwind 默认的 (hover: hover)，额外要求 (pointer: fine)。
+ */
+@custom-variant hover {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            @slot;
+        }
+    }
+}
+
 @theme inline {
     --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
     --font-heading: var(--font-sans);
