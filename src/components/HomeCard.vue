@@ -23,8 +23,6 @@
   <component
     :is="href ? 'a' : 'div'"
     :href="href"
-    :target="href ? '_blank' : undefined"
-    :rel="href ? 'noopener noreferrer' : undefined"
     class="px-4 w-full flex gap-3 items-center py-2"
     :class="
       href
