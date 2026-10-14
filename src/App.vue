@@ -6,7 +6,7 @@ import logoDark from '@/assets/logos/logo-dark.svg';
 </script>
 
 <template>
-  <div class="flex min-h-svh w-full items-center justify-center bg-secondary px-8">
+  <div class="flex min-h-svh w-full items-center justify-center bg-background px-8">
     <div class="w-full max-w-sm flex flex-col gap-4">
       <div class="px-4">
         <img :src="logoLight" alt="JZ8" class="h-8 w-auto dark:hidden" />
