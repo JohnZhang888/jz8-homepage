@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Rss, Vote, Puzzle } from '@lucide/vue';
+import { Rss, Vote, Puzzle, Trophy } from '@lucide/vue';
 import HomeCard from '@/components/HomeCard.vue';
-import logoLight from '@/assets/logos/logo-light.svg';
-import logoDark from '@/assets/logos/logo-dark.svg';
+import logoLight from '@/assets/logos/Logo Light Mode.png';
+import logoDark from '@/assets/logos/Logo Dark Mode.png';
 </script>
 
 <template>
@@ -15,7 +15,8 @@ import logoDark from '@/assets/logos/logo-dark.svg';
       <div class="bg-card rounded-md border py-4 flex flex-col">
         <HomeCard :icon="Rss" title="博客" description="记录日常生活、OI 学习等内容。" href="https://blogs.jz8.de5.net" />
         <HomeCard :icon="Vote" title="EasyVote" description="一个简易的投票与唱票程序。" href="https://ev.jz8.de5.net" />
-        <HomeCard :icon="Puzzle" title="Puzzles" description="一个可能有点无聊的网页解谜游戏。" href="https://puzzles.jz8.de5.net" />
+        <HomeCard :icon="Puzzle" title="Juzzle" description="网页解谜游戏——「处处皆游戏」" href="https://juzzle.jz8.de5.net" />
+        <HomeCard :icon="Trophy" title="Luogu VP" description="洛谷 VP 工具" href="https://github.com/JohnZhang888/luogu-vp" />
       </div>
       <div class="flex flex-col px-4">
         <div class="text-muted-foreground font-bold my-1">友情链接</div>
